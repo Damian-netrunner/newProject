@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mars</title>
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container">
+        <nav class="header__nav">
+            <img class="header__logo" src="img/mars.svg" alt="Лого">
+            <ul class="site-navigation">
+                <li class="site-navigation__item"><a class="site-navigation__link" href="#">О марсе</a></li>
+                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Процесс</a></li>
+                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Билеты</a></li>
+                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Новости</a></li>
+                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+            </ul>
+            <button class="button">Купить билеты</button>
+        </nav>
+        </div>
+        <div class="container">
+        <form class="form">
+            <h2 class="form__heading">Бронирование билетов</h2>
+            <div class="form__block">
+            <label class="form__label" for="arrival-date-field">Дата заезда</label>
+            <input class="form__input" type="date" value="13.05.2022" id="arrival-date-field">
+            </div>
+            <div class="form__block">
+            <label class="form__label" for="date-of-departure-field">Дата выезда</label>
+            <input class="form__input" type="date" value="13.05.2032" id="date-of-departure-field">
+            </div>
+            <div class="form__block">
+            <label class="form__label" for="quantity-field">Количество</label>
+            <input class="form__input" type="text" value="1 человек" id="quantity-field">
+            </div>
+        </form>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+        <section class="promo">
+            <p class="promo__heading">Точка назначения:</p>
+            <div class="promo__wrapper">
+                <video class="promo__video"autoplay loop muted>
+                    <source src="../video/Mars.m4v">
+                </video>
+            <p class="promo__logo">Марс</p>
+            </div>
+        </section>
+        </div>
+    </main>
+</body>
+</html>
